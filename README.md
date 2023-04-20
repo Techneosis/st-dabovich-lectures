@@ -14,7 +14,8 @@ The aim is to create a print-ready version that's easier to read than the scanne
 
 ## Roadmap
 
-1. Get all of the content into individual chapter files, broken up appropriately
-1. Proper formatting like a book
+1. ~~Get all of the content into individual chapter files, broken up appropriately~~
+1. Proof-read for OCR Errors
 1. ???
+1. Proper formatting like a book
 1. Work on the next book by St. Dabovich
