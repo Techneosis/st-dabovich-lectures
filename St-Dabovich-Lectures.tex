@@ -1,0 +1,140 @@
+ \documentclass[11pt, openany]{book}
+\usepackage[
+	paperheight=9in,
+	paperwidth=6in,
+	margin=.75in,
+	heightrounded,
+	twoside,
+%	bindingoffset=0.25in,
+%	showframe
+]{geometry}
+
+\usepackage{perpage}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[perpage,para,symbol*]{footmisc}
+\usepackage{hanging}
+\usepackage[font=small,labelfont=bf]{caption}
+
+%%%%%%%%%%%%%
+% Custom Commands %
+%%%%%%%%%%%%%
+\definecolor{deepred}{HTML}{802a1d}
+% Used for first letter of each chapter
+\newcommand{\trans}[1]{\footnote{{#1} -- \scriptsize{TRANS.}}}
+
+\newcommand{\hugered}[1]{{\color{red}\Huge{}\textbf{#1}}}
+
+% Centered Red Subtitle text with spacing
+\newcommand{\subtitle}[2][red]{
+	{
+	\color{#1}
+	\large{}
+	\center
+	\vspace{1cm}
+	\begin{center}
+	{#2}
+	\end{center}
+	\vspace{1cm}
+	}
+}
+
+% Display a centered decorative red cross
+\newcommand{\minicross}{
+	\begin{center}
+		\includegraphics[height=0.4cm]{./Images/Simple_Cross.png}
+	\end{center}
+}
+
+% Create listing in glossary. Param #1 is defined word, Param #2 is definition.
+% 	Also creates a label that can be linked to in footnotes from elsewhere
+\newcommand{\gloss}[2]{
+	\textbf{{#1}}\hspace{1em}{#2}
+}
+
+% \newcommand{\chformat}{
+% 	\titleformat
+% 		{\chapter} % command
+% 		[display] % shape
+% 		{\bfseries\Large} % format
+% 		{
+% 			\vspace{-1cm}
+% 			%Story No. \ \thechapter
+% 		} % label
+% 		{0cm} % sep
+% 		{
+% 			\vspace{-2cm}
+% 			\begin{center}
+% 			{\includegraphics[width=\the\textwidth]{./Images/Chapter_Banner.png}\\
+% 			\vspace{1.5cm}}
+% %			\color{red}
+% 		} % before-code
+% 		[
+% 			\end{center}
+% 		] % after-code
+% }
+
+\newcommand{\scripture}[2]{
+    \textit{{#1}}–{#2}.
+}
+
+\newcommand{\bigpicgeometry}{
+	\newgeometry{
+		margin=0in,
+		bmargin=-1.375in,
+		tmargin=-1.5in,
+		rmargin=-0in,
+%		heightrounded,
+		twoside,
+	}
+}
+
+%%%%%%%%%%%%%%%
+% END Custom Commands %
+%%%%%%%%%%%%%%%
+
+% Styles %
+\pretolerance=150
+\setlength{\emergencystretch}{1.5em}
+\tolerance=200
+
+\definecolor{red}{rgb}{.75,0,0}
+\pagestyle{empty}
+\setstretch{1.3}
+%END Chapter Styles
+
+\begin{document}
+\title{St Sebastian Dabovich Lectures}
+
+\tableofcontents
+
+%Chapters
+\pagestyle{plain}
+
+\input{./content/00-preface}
+\input{./content/01-immortality-of-the-soul}
+\input{./content/02-necessity-for-revelation}
+\input{./content/03-authenticity-of-gospel}
+\input{./content/04-true-church-of-christ}
+\input{./content/05-education-of-children}
+\input{./content/06-new-years-sermon}
+\input{./content/07-fast-and-temperance}
+\input{./content/08-gospel-prodigal}
+\input{./content/09-sunday-of-orthodoxy}
+\input{./content/10-third-lenten-sunday}
+\input{./content/11-fourth-lenten-sunday}
+\input{./content/12-thoughts-for-good-friday}
+\input{./content/13-gospel-impotent}
+\input{./content/14-gospel-blind}
+\input{./content/15-ascension-feast}
+\input{./content/16-trinity-sunday}
+\input{./content/17-condition-of-society}
+\input{./content/18-holy-communion}
+\input{./content/19-christmas-day}
+\input{./content/xx-sales-page}
+
+\end{document}
