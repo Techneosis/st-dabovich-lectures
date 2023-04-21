@@ -78,8 +78,12 @@
 % 		] % after-code
 % }
 
+\newcommand{\reference}[1]{
+    ({#1})
+}
+
 \newcommand{\scripture}[2]{
-    \textit{{#1}}–{#2}.
+    \textit{{#1}}\reference{{#2}}
 }
 
 \newcommand{\bigpicgeometry}{
